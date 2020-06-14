@@ -23,7 +23,7 @@ class Inventory{
   @HiveField(5)
   final DateTime purchasedDate;
 
-  Inventory(this.purchaseNumber, this.companyName, this.productName, this.quantity, this.comment, this.purchasedDate);
+  Inventory({this.purchaseNumber, this.companyName, this.productName, this.quantity, this.comment, this.purchasedDate});
 
 
 }

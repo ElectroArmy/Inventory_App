@@ -14,12 +14,12 @@ class InventoryAdapter extends TypeAdapter<Inventory> {
       for (var i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Inventory(
-      fields[0] as String,
-      fields[1] as String,
-      fields[2] as String,
-      fields[3] as int,
-      fields[4] as String,
-      fields[5] as DateTime,
+      purchaseNumber: fields[0] as String,
+      companyName: fields[1] as String,
+      productName: fields[2] as String,
+      quantity: fields[3] as int,
+      comment: fields[4] as String,
+      purchasedDate: fields[5] as DateTime,
     );
   }
 
